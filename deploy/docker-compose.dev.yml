@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # 🗄️ Base de Datos Principal (PostgreSQL + pgvector)
+  postgres_db:
+    image: pgvector/pgvector:pg16
+    container_name: pulse_postgres_local
+    environment:
+      POSTGRES_USER: pulse_admin
+      POSTGRES_PASSWORD: pulse_password_123
+      POSTGRES_DB: academic_pulse_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pulse_pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # ⚡ Servidor de Caché (Redis)
+  redis_cache:
+    image: redis:7-alpine
+    container_name: pulse_redis_local
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  pulse_pg_data:
+    name: pulse_pg_data_local
