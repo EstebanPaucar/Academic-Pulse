@@ -1,0 +1,48 @@
+# ==========================================
+# 🛡️ ACADEMIC PULSE - UNIVERSAL GITIGNORE
+# ==========================================
+
+# 1. Variables de Entorno (¡CRÍTICO!)
+.env
+.env.*
+!.env.example
+
+# 2. Backend: Python & FastAPI
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+alembic.ini
+
+# 3. Frontend: Node, React Native & Expo
+node_modules/
+npm-debug.log
+yarn-error.log
+.expo/
+dist/
+build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# 4. Infraestructura: Terraform & Docker
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+crash.log
+
+# 5. Sistema Operativo y Editores (IDE)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
