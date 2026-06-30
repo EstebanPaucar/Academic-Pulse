@@ -31,7 +31,7 @@ export const useAuthViewModel = () => {
       const response = await authService.login({ correo, contrasena });
       // Aquí guardarías el token (ej. en AsyncStorage)
       console.log('Login Exitoso:', response.access_token);
-      router.replace('/'); // Redirige al mapa/pantalla principal
+      router.replace('/dashboard'); // Redirige al mapa/pantalla principal
     } catch (err: any) {
       setError(err.message);
     } finally {
