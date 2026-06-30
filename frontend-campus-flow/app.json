@@ -3,6 +3,7 @@
     "name": "Campus Flow",
     "slug": "campus-flow",
     "version": "1.0.0",
+    "scheme": "campusflow",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "android": {
