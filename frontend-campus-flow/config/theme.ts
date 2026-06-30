@@ -1,13 +1,14 @@
 export const theme = {
   colors: {
     primary: '#3B82F6',
-    primaryLight: '#EFF6FF', // 10% opacity simulado para fondos
+    primaryLight: '#EFF6FF',
     secondary: '#10B981',
     tertiary: '#F59E0B',
     error: '#FF0000',
     errorLight: '#FEE2E2',
     neutral: '#757780',
     neutralLight: '#F3F4F6',
+    background: '#F4F6F8', // <-- ¡Agrega esta línea!
     white: '#FFFFFF',
     black: '#000000',
     border: '#E5E7EB',
